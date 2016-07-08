@@ -222,7 +222,7 @@ button, input, select {
       margin-bottom: 2/16rem;
       margin-top: 12/16rem;
       padding: 0 20/16rem;
-      max-width: 200/16rem; 
+      max-width: 200/16rem;
       overflow: hidden;
       text-overflow: ellipsis;
     }
@@ -327,13 +327,17 @@ button, input, select {
 
   .resizer {
     @width: 6;
+    position: absolute;
+    top: 0;
+    right: 0;
     cursor: col-resize;
+    height: 100%;
     width: @width/16rem;
     margin-left: -@width/2/16rem;
     margin-right: -@width/2/16rem;
     z-index: 1000;
   }
-  
+
 
   // ::-webkit-scrollbar {
   //   width: 0;
@@ -428,7 +432,7 @@ button, input, select {
       color: #000;
       opacity: .2;
 
-      &:focus, 
+      &:focus,
       &:hover {
         color: #000;
         text-decoration: none;
